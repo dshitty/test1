@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fun.js" defer></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: RGB(146, 168, 209);
+             background: rgba(0, 0, 0, 0.5)
+        }
+        .container{
+            display: flex;
+            /* display: none; */
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            width: 25vw;
+            height: 60vh;
+           background-color: rgb(244, 244, 244);
+            border: none;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+           
+            
+        }
+        form{
+            font-size: 25px;
+            height: 18.5185vh;
+            position:absolute;
+            bottom:54vh;
+            left: 40vw;
+        }
+      
+        input{
+            
+            display: block;
+            margin-bottom: 50px;
+            height: 4vh;
+            width: 19vw;
+
+        }
+        /* #goHome{          
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: absolute;
+            top: 64vh;
+            right: 45vw;
+            width: 10vw;
+            height: 6vh;
+            border: none;
+            border-radius: 4vh;
+        } */
+    #goHome{
+    margin-bottom: 6vh;
+    margin-left: 0.5vw;
+    width: 18vw;
+    height: 6vh;
+    border-radius: 4vh;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+}
+
+        #goHome:hover{
+            cursor: pointer;
+            background-color: rgb(234, 229, 222);
+            background: rgba(30, 30, 30, 0.5);
+        }
+        .ins{
+            position: absolute;
+            left: 43.5vw;
+            bottom: 82vh;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .msg{
+            position: absolute;
+            top: 75vh;
+            right: 42.75vw;
+            color: red;
+            font-weight: 800;
+        }
+        .msg2{
+                 position: absolute;
+            top: 75vh;
+            right: 40.75vw;
+            color: red;
+            font-weight: 800;
+        }
+
+        .isThis{
+            display: none;
+            font-size: 10vw;
+        }
+        .arrow{
+            display: none;
+            position: absolute;
+            top: 70vh;
+            font-size: 20px;
+            right: 44vw;
+            width: 15vw;
+            height: 6vh;
+            border: none;
+            border-radius: 3vh;
+             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+             background-color: rgba(249, 249, 249, 0.644);
+            }
+            .arrow:hover{
+                cursor: pointer;
+                background-color: rgba(249, 249, 249, 0.941);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ins">SUBMIT YOUR NAME</div>
+    <div class="container">
+
+        <form action="">
+           First Name:
+            <input id="firstName" type="text">
+           Last Name:
+           <input id="lastName" type="text">
+           <button type="submit" id = "goHome" >Submit</button>
+        </form>
+    </div>
+    <span class="msg"></span>
+    <span class="msg2"></span>
+    <img src="583947787_2019012678832370_8845292948348373571_n.jpg" style="width:100vw ; height: 100vh; display: none;"  alt="error">
+    <div class="isThis">Is this you?</div><br>
+    <button class="arrow">➔</button>
+</body>
+</html>
