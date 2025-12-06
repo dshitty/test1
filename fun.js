@@ -25,6 +25,7 @@ butSub.addEventListener('click', (e) =>{
         butArrow.addEventListener('click', e=>{
             isThis.remove();
             butArrow.remove();
+            audio.play();
             imgp.style.display='block';
 
         })
@@ -37,4 +38,5 @@ butSub.addEventListener('click', (e) =>{
            lastName.value = ''
         setTimeout(()=>msg2.textContent='',2000) 
     }
+
 })
