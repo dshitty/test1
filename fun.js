@@ -9,6 +9,7 @@ const imgp = document.querySelector('img')
 const isThis = document.querySelector('.isThis')
 const arrow = document.querySelector('.arrow')
 butArrow = document.querySelector('.arrow')
+const audio = document.querySelector('audio')
 butSub.addEventListener('click', (e) =>{
     e.preventDefault();
     if(firstName.value==='' || lastName.value==='')
@@ -40,3 +41,4 @@ butSub.addEventListener('click', (e) =>{
     }
 
 })
+
